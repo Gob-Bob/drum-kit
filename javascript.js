@@ -21,11 +21,14 @@ function addSoundsToAllButtons() {
 addSoundsToAllButtons();
 
 const buttons = document.querySelectorAll('button');
+const buttonsLetter = document.querySelectorAll('.buttonLetter');
+const buttonsText = document.querySelectorAll('.buttonText');
+
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
-    button.style.cssText = 'box-shadow: 0px 0px 4px 4px rgba(255, 255, 0, 0.8);';
+    button.style.cssText = 'border-color: rgba(255, 255, 0, 0.8); box-shadow: 0px 0px 1px 1px rgba(255, 255, 0, 0.4); transform:scale(1.1)';
     setTimeout(() => {
-        button.style.cssText = 'box-shadow: '; 
+        button.style.cssText = 'border-color: ; box-shadow: ; transform:scale(1)';
     }, 50);
   });
 });
